@@ -1,28 +1,16 @@
-// mapやフィルターを使った配列の処理
-const nameArr = ["田中", "山田", "jun"];
-// for (let index = 0; index < nameArr.length; index++){
-//   console.log(`${index+1}番目は${nameArr[index]}です`);
-// }
+// 三項演算子
 
-// const nameArr2 = nameArr.map((name)=>{
-//   return name;
-// })
-// console.log(nameArr2);
+// ある条件？条件がtrueの時：条件がfalseの時
+// const val1 = 1 > 0 ? "trueです":"falseです";
+// console.log(val1);
 
-// nameArr.map((name, index)=>console.log(`${index+1}番目は${name}です。`));
+// const num = 1300;
+// console.log(num.toLocaleString());
 
-// const numArr = [1,2,3,4,5];
-// const newNumArr = numArr.filter((num)=>{
-//   return num % 2 === 0;
-// });
+// const formattedNum = typeof num === "number" ? num.toLocaleString():"数値を入力してください";
+// console.log(formattedNum);
 
-// console.log(newNumArr);
-const newNameArr = nameArr.map((name) => {
-  if (name === "jun") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-
-console.log(newNameArr);
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+};
+console.log(checkSum(50, 70));
